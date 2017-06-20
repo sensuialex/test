@@ -357,7 +357,7 @@ class MoneyLender(ActionCard): #金貸し
         if not user.is_card_in_hand('Copper'):
             print("廃棄するカードがありません")
             return
-        number = user.index_card_in_hand('Copper')
+        number = user.search_card_in_hand('Copper')
         trashed = user.hand_pop(number)
         user.trashcard(trashed)
         user.pluscoins(3)

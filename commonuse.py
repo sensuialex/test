@@ -43,6 +43,10 @@ class CardsHolder():
     def index(self, name):
         cardname_list = [card.ename for card in self.list]
         return cardname_list.index(name)
+        
+    def search(self, name):
+        cardname_list = [card.ename for card in self.list]
+        return cardname_list.index(name)
 
     def is_empty(self):
         return self.list == []

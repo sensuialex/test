@@ -160,8 +160,8 @@ class Player():
     def is_card_in_hand(self, ename):
         return self.cards.is_card_in_hand(ename)
 
-    def index_card_in_hand(self, ename):
-        return self.cards.index_card_in_hand(ename)
+    def search_card_in_hand(self, ename):
+        return self.cards.search_card_in_hand(ename)
 
     def use_attack(self):
         pass
@@ -207,8 +207,8 @@ class PlayerCards():
     def is_card_in_hand(self, ename):
         return self.hand.is_card_in(ename)
 
-    def index_card_in_hand(self, ename):
-        return self.hand.index(ename)
+    def search_card_in_hand(self, ename):
+        return self.hand.search(ename)
 
     def draw(self, number):
         if number == 0:
