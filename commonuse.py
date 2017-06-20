@@ -40,9 +40,8 @@ class CardsHolder():
     def remove(self, element):
         self.list.remove(element)
 
-    def index(self, name):
-        cardname_list = [card.ename for card in self.list]
-        return cardname_list.index(name)
+    def index(self, cards):
+        return self.list.index(cards)
         
     def search(self, name):
         cardname_list = [card.ename for card in self.list]

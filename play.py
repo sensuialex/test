@@ -31,4 +31,4 @@ def player_decide(game, nontest):
     return testplayer
 
 def supply_decide():
-    return [card.Smithy, card.Thief, card.Library, card.Witch, card.MoneyLender, card.Festival, card.CouncilRoom, card.Cellar, card.Adventurer, card.Workshop]
+    return [card.Smithy, card.Feast, card.Library, card.Witch, card.MoneyLender, card.Festival, card.CouncilRoom, card.Cellar, card.Adventurer, card.Workshop]
