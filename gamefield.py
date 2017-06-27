@@ -3,7 +3,7 @@ kindofvictoryc = 3  #基本勝利点カードの種類
 kindofaction = 10  #王国カードの種類
 
 class Field():
-    zeropile = 0  #0枚になったサプライの個数
+    #zeropile = 0　->　コントラクタへ移動
     def __init__(self):
         self.trash = [] #廃棄置き場(単独)
         self.cursepile = Pile()  #呪い置き場(単独)
@@ -19,8 +19,10 @@ class Field():
         self.supnumber.update(supvicnum)
         self.supnumber.update(supactnum)  #サプライの場に番号を対応付けた
 
+        self.zeropile = 0 #０枚になったサプライの個数
+
     def is_game_set(self):
-        if Field.zeropile >= 3 or self.get_supply(7).zerocheck():
+        if self.zeropile >= 3 or self.get_supply(7).zerocheck():
             return True
         return False
 
@@ -34,7 +36,7 @@ class Field():
         self.trash.append(cards)
 
     def add_zeropile(self):
-        Field.zeropile += 1
+        self.zeropile += 1
 
 
 class Pile():  #サプライのカードの山
