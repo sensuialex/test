@@ -1,4 +1,4 @@
-#coding: utf-8
+#coding:UTF-8
 import play
 
 game = play.game_setup(2,1)
