@@ -22,3 +22,4 @@ for m in range(10): #対戦回数
 
 print("トータル結果")
 print(player_winpts)
+ #aaaaa
